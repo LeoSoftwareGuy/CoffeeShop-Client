@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+
+.bg-image {
+  background-image: url('/images/decaffeinatoBackground.jpg');
+  background-size: cover;
+  background-position: center;
+}
