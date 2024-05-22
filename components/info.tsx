@@ -84,6 +84,10 @@ const Info: React.FC<InfoProps> = ({ data }) => {
             onChange={(evt) => setAmount(parseInt(evt.target.value))}
           />
         </div>
+        <div className="flex items-center gap-x-4">
+          <h3 className="font-semibold text-black">Description:</h3>
+          <div>{data.description}</div>
+        </div>
       </div>
       <div className="mt-10 flex items-center gap-x-3">
         <Button

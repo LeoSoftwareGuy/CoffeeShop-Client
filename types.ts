@@ -13,6 +13,7 @@ export interface CoffeeBrand {
 export interface Product {
   id: string;
   coffeeBrand: CoffeeBrand;
+  description:string;
   name: string;
   price: string;
   stock: number;
