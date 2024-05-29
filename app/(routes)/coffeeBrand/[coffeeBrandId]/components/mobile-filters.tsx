@@ -12,12 +12,14 @@ interface MobileFiltersProps {
   sizes: Size[];
   intensities: Intensity[];
   origins: Origin[];
+  prices:number[];
 }
 
 const MobileFilters: React.FC<MobileFiltersProps> = ({
   sizes,
   intensities,
   origins,
+  prices,
 }) => {
   const [open, setOpen] = useState(false);
   const onOpen = () => setOpen(true);
@@ -58,6 +60,7 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({
                 name="Intensities"
                 data={intensities}
               />
+              
             </div>
           </Dialog.Panel>
         </div>
